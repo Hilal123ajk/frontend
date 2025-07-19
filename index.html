@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance | Women's Clothing</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="font-sans antialiased bg-gray-50">
+  <div class="w-full 2xl:w-3/4 mx-auto">
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-100 border-b border-gray-100 py-4 px-4 md:px-8"> <!-- Reduced padding here -->
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="images/logo.png" class="w-12 h-12 rounded-full" alt="">
+            </div> 
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-6"> <!-- Reduced space between nav items -->
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition">New Arrivals</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition">Collections</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition">About</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition">
+                    <i class="bi bi-cart2 text-xl"></i>
+                </a>
+            </div>
+
+            <!-- Mobile - Only Cart Icon -->
+            <div class="md:hidden">
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition">
+                    <i class="bi bi-cart2 text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="w-full">
+      <div class="flex flex-col lg:flex-row items-center bg-gray-50">
+       
+        <div class="w-full lg:w-1/2 px-4 sm:px-6 lg:px-8 xl:px-12 py-12 lg:py-16 ">
+          <div class="max-w-xl mx-auto lg:mx-0 flex flex-col space-y-6 text-center lg:text-left">
+            <h1 class="text-3xl ubuntu-medium sm:text-4xl lg:text-5xl xl:text-6xl  text-gray-900 leading-tight">
+              When You Look Good, You Lead Better 👑
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-600">
+              Discover our exquisite collection of traditional and contemporary Pakistani clothing, crafted with premium
+              fabrics and timeless elegance.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a
+                href="#"
+                class="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white bg-gray-900 border border-transparent rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transition-colors duration-200"
+              >
+                Buy Now
+              </a>
+              <a
+                href="#"
+                class="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-gray-900 bg-gray-100 border-2 border-gray-900 rounded-lg hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transition-colors duration-200"
+              >
+                Explore
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full lg:w-1/2 lg:ml-0">
+          <img
+            src="images/hero-img.jpg"
+            alt="Model wearing elegant Pakistani clothing"
+            class="w-full h-96 lg:h-[500px] xl:h-[600px] object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending cards section  -->
+   
+
+    <section class="w-full py-8 bg-white">
+      <div class="w-full px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="flex flex-col sm:flex-row items-center justify-between w-full mb-8 gap-y-4 gap-x-4">
+          <!-- Centered Nav -->
+          <div class="w-full sm:w-auto sm:flex-1 flex justify-center sm:justify-center">
+            <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+              <a href="#" class="text-sm sm:text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-200">All</a>
+              <a href="#" class="text-sm sm:text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-200">Dresses</a>
+              <a href="#" class="text-sm sm:text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-200">Kurtas</a>
+              <a href="#" class="text-sm sm:text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-200">Accessories</a>
+            </nav>
+          </div>
+    
+          <!-- Filter Button on Right -->
+          <div class="sm:ml-auto">
+            <button class="border border-gray-300 text-gray-700 bg-transparent hover:bg-black hover:text-white inline-flex items-center px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+              <i class="bi bi-funnel mr-2"></i>
+              Filter
+            </button>
+          </div>
+        </div>
+    
+        <!-- Products Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-6">
+          <!-- Product Card -->
+          <div class="group cursor-pointer">
+            <div class="bg-white overflow-hidden">
+              <div class="relative aspect-[3/3.8] overflow-hidden mb-2">
+                <img src="images/card-img.png" alt="Ethereal Bloom Maxi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <button class="absolute inset-x-0 bottom-0 bg-gray-900 text-white py-2 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-2">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M6 6h15l-1.5 9h-13z"></path>
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                  </svg>
+                  Add to Cart
+                </button>
+              </div>
+              <div>
+                <h3 class="text-sm font-medium text-gray-800">Ethereal Bloom Maxi</h3>
+                <p class="text-sm text-gray-600">Rs 15,990</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="group cursor-pointer">
+            <div class="bg-white overflow-hidden">
+              <div class="relative aspect-[3/3.8] overflow-hidden mb-2">
+                <img src="images/card-img.png" alt="Ethereal Bloom Maxi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <button class="absolute inset-x-0 bottom-0 bg-gray-900 text-white py-2 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-2">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M6 6h15l-1.5 9h-13z"></path>
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                  </svg>
+                  Add to Cart
+                </button>
+              </div>
+              <div>
+                <h3 class="text-sm font-medium text-gray-800">Ethereal Bloom Maxi</h3>
+                <p class="text-sm text-gray-600">Rs 15,990</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="group cursor-pointer">
+            <div class="bg-white overflow-hidden">
+              <div class="relative aspect-[3/3.8] overflow-hidden mb-2">
+                <img src="images/card-img.png" alt="Ethereal Bloom Maxi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <button class="absolute inset-x-0 bottom-0 bg-gray-900 text-white py-2 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-2">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M6 6h15l-1.5 9h-13z"></path>
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                  </svg>
+                  Add to Cart
+                </button>
+              </div>
+              <div>
+                <h3 class="text-sm font-medium text-gray-800">Ethereal Bloom Maxi</h3>
+                <p class="text-sm text-gray-600">Rs 15,990</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="group cursor-pointer">
+            <div class="bg-white overflow-hidden">
+              <div class="relative aspect-[3/3.8] overflow-hidden mb-2">
+                <img src="images/card-img.png" alt="Ethereal Bloom Maxi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <button class="absolute inset-x-0 bottom-0 bg-gray-900 text-white py-2 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-2">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M6 6h15l-1.5 9h-13z"></path>
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                  </svg>
+                  Add to Cart
+                </button>
+              </div>
+              <div>
+                <h3 class="text-sm font-medium text-gray-800">Ethereal Bloom Maxi</h3>
+                <p class="text-sm text-gray-600">Rs 15,990</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Repeat as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-4 border-t border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
+    
+        <!-- Column 1: Company Info -->
+        <div class="flex flex-col items-center md:items-start text-center md:text-left">
+          <a href="#" class="mb-3 block">
+            <img
+              src="images/logo.png"
+              width="56"
+              height="56"
+              class="w-14 h-14 rounded-full"
+              alt="Elegance Logo"
+            />
+          </a>
+          <p class="text-gray-600 text-xs leading-tight max-w-xs mb-4">
+            Elegance offers exquisite traditional and contemporary Pakistani clothing.
+          </p>
+          <div class="flex space-x-3">
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition" aria-label="Facebook">
+              <i class="bi bi-facebook text-base"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition" aria-label="Instagram">
+              <i class="bi bi-instagram text-base"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition" aria-label="Twitter">
+              <i class="bi bi-twitter text-base"></i>
+            </a>
+          </div>
+        </div>
+    
+        <!-- Column 2: Shop by Category -->
+        <div class="flex flex-col items-center md:items-start">
+          <h3 class="text-base font-semibold text-gray-900 mb-3">Shop by Category</h3>
+          <nav class="flex flex-col space-y-1 text-center md:text-left text-sm">
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Dresses</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Kurtas & Tunics</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Formal Wear</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Casual Wear</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Accessories</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Sale</a>
+          </nav>
+        </div>
+    
+        <!-- Column 3: Customer Service -->
+        <div class="flex flex-col items-center md:items-start">
+          <h3 class="text-base font-semibold text-gray-900 mb-3">Customer Service</h3>
+          <nav class="flex flex-col space-y-1 text-center md:text-left text-sm">
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">FAQs</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Shipping & Delivery</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Returns & Exchanges</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Size Guide</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Contact Us</a>
+          </nav>
+        </div>
+    
+        <!-- Column 4: About & Legal -->
+        <div class="flex flex-col items-center md:items-start">
+          <h3 class="text-base font-semibold text-gray-900 mb-3">About Elegance</h3>
+          <nav class="flex flex-col space-y-1 text-center md:text-left text-sm">
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Our Story</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Careers</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Privacy Policy</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Terms of Service</a>
+          </nav>
+        </div>
+      </div>
+    
+      <!-- Copyright -->
+      <div class="mt-4 pt-2 border-t border-gray-100 text-center text-gray-600 text-xs">
+        <p>&copy; 2025 Elegance. All rights reserved.</p>
+      </div>
+    </footer>
+    
+    
+  </div>
+</body>

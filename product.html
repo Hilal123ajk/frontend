@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance | Women's Clothing</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="font-sans antialiased bg-gray-50">
+  <div class="w-full 2xl:w-3/4 mx-auto ">
+    <!-- Navigation Bar -->
+    <nav class="border-b border-gray-100 bg-gray-100 py-4 px-4 md:px-8"> <!-- Reduced padding here -->
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="images/logo.png" class="w-12 h-12 rounded-full" alt="">
+            </div> 
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-6"> <!-- Reduced space between nav items -->
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition">New Arrivals</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition">Collections</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition">About</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition">
+                    <i class="bi bi-cart2 text-xl"></i>
+                </a>
+            </div>
+
+            <!-- Mobile - Only Cart Icon -->
+            <div class="md:hidden">
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition">
+                    <i class="bi bi-cart2 text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <section class="py-12 md:py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
+      
+      <!-- Left Column: Image Gallery -->
+      <div class="flex flex-col items-center lg:items-start">
+        <!-- Main Product Image -->
+        <div class="relative w-11/12 aspect-[8/11] overflow-hidden rounded-lg shadow-lg mb-4">
+          <img src="images/card-img.png" alt="Product Name" class="object-cover w-full h-full" />
+        </div>
+
+        <!-- Thumbnail Gallery -->
+        <div class="flex gap-3 overflow-x-auto pb-2 lg:pb-0">
+          <div class="relative flex-shrink-0 w-24 h-24 cursor-pointer overflow-hidden rounded-lg border-2 border-gray-900">
+            <img src="images/card-img.png" alt="Thumbnail" class="object-cover w-full h-full hover:scale-105 transition-transform duration-200" />
+          </div>
+          <!-- Add more thumbnails if needed -->
+        </div>
+      </div>
+
+      <!-- Right Column: Product Details & Actions -->
+      <div class="flex flex-col gap-4">
+        <h1 class="text-2xl md:text-3xl font-semibold text-gray-900 leading-tight uppercase">PRODUCT NAME</h1>
+        <p class="text-sm text-gray-600">SKU#: ABC123</p>
+        <p class="text-sm text-gray-600">IN STOCK</p>
+        <a href="#" class="text-sm text-gray-600 underline hover:text-gray-900 transition">
+          BE THE FIRST TO REVIEW THIS PRODUCT
+        </a>
+
+        <p class="text-3xl font-bold text-gray-900 mt-4">PKR 12,345</p>
+
+        <div class="flex items-center gap-2 text-sm text-gray-700">
+          <!-- Placeholder for alif shop logo -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-green-600">
+            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 .75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd"/>
+          </svg>
+          <span class="font-semibold text-green-600">alif shop</span>
+          <span>Pay in 3 installments of PKR 4,115</span>
+        </div>
+
+        <!-- Size Selector -->
+        <div class="mt-6">
+          <label class="text-base font-semibold text-gray-900 mb-2 block">SIZE</label>
+          <div class="flex gap-3">
+            <div>
+              <input type="radio" id="size-S" name="size" class="sr-only" checked />
+              <label for="size-S" class="flex items-center justify-center w-10 h-10 rounded-full border border-gray-300 text-gray-700 text-sm font-medium cursor-pointer hover:bg-gray-50 transition-colors bg-gray-900 text-white border-gray-900">S</label>
+            </div>
+            <div>
+              <input type="radio" id="size-M" name="size" class="sr-only" />
+              <label for="size-M" class="flex items-center justify-center w-10 h-10 rounded-full border border-gray-300 text-gray-700 text-sm font-medium cursor-pointer hover:bg-gray-50 transition-colors">M</label>
+            </div>
+            <!-- Add more sizes as needed -->
+          </div>
+          <button class="mt-4 border border-gray-300 text-gray-700 hover:bg-gray-50 bg-transparent px-4 py-2 rounded-md inline-flex items-center text-sm font-medium">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h16v16H4z"/>
+            </svg>
+            SIZE CHART
+          </button>
+        </div>
+
+        <!-- Add to Bag -->
+        <button class="w-full py-3 text-base font-medium border border-black text-white bg-black hover:bg-gray-900 mt-6 rounded-md">
+          Add To Bag
+        </button>
+
+        <!-- Short Description -->
+        <p class="text-gray-700 text-base leading-relaxed mt-6">
+          This is a beautiful short description of the product that highlights its key features and style.
+        </p>
+
+        <!-- More Information Accordion (static example) -->
+        <div class="mt-6 border-b border-gray-200">
+          <button class="w-full text-left py-4 text-lg font-semibold text-gray-900">More Information</button>
+          <div class="pt-2 pb-4 text-gray-700 text-base leading-relaxed">
+            <div class="grid grid-cols-2 gap-y-2 text-sm">
+              <span class="font-medium text-gray-800">Color</span>
+              <span>Blue</span>
+              <span class="font-medium text-gray-800">Fabric</span>
+              <span>Cotton</span>
+              <span class="font-medium text-gray-800">Product Category</span>
+              <span>Unstitched</span>
+              <span class="font-medium text-gray-800">Season</span>
+              <span>Summer</span>
+            </div>
+            <p class="mt-4 text-xs text-gray-500">Actual product color may vary slightly from the image shown.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="py-12 md:py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">You Might Also Like</h2>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8 md:gap-x-6 md:gap-y-10">
+
+      <!-- Product Card Start -->
+      <a href="/product/1" class="group block cursor-pointer">
+        <div class="bg-white overflow-hidden">
+          <div class="relative aspect-square overflow-hidden mb-2">
+            <img src="images/card-img.png" alt="Product Name" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <button class="absolute inset-x-0 bottom-0 bg-black text-white py-2 text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-1">
+              <i class="bi bi-cart2 text-base"></i>
+              Add to Bag
+            </button>
+          </div>
+          <div>
+            <h3 class="text-sm font-medium text-gray-800 truncate">Product Name</h3>
+            <p class="text-sm text-gray-600">PKR 4,999</p>
+          </div>
+        </div>
+      </a>
+      <!-- Product Card End -->
+
+      <!-- Repeat above block for each product -->
+      <a href="/product/2" class="group block cursor-pointer">
+        <div class="bg-white overflow-hidden">
+          <div class="relative aspect-square overflow-hidden mb-2">
+            <img src="images/card-img.png" alt="Another Product" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <button class="absolute inset-x-0 bottom-0 bg-black text-white py-2 text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-1">
+              <i class="bi bi-cart2 text-base"></i>
+              Add to Bag
+            </button>
+          </div>
+          <div>
+            <h3 class="text-sm font-medium text-gray-800 truncate">Another Product</h3>
+            <p class="text-sm text-gray-600">PKR 5,499</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Add more products as needed -->
+
+    </div>
+  </div>
+</section>
+
+
+
+
+    
+
+    <!-- Footer -->
+    <footer class="bg-white py-4 border-t border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
+    
+        <!-- Column 1: Company Info -->
+        <div class="flex flex-col items-center md:items-start text-center md:text-left">
+          <a href="#" class="mb-3 block">
+            <img
+              src="images/logo.png"
+              width="56"
+              height="56"
+              class="w-14 h-14 rounded-full"
+              alt="Elegance Logo"
+            />
+          </a>
+          <p class="text-gray-600 text-xs leading-tight max-w-xs mb-4">
+            Elegance offers exquisite traditional and contemporary Pakistani clothing.
+          </p>
+          <div class="flex space-x-3">
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition" aria-label="Facebook">
+              <i class="bi bi-facebook text-base"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition" aria-label="Instagram">
+              <i class="bi bi-instagram text-base"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition" aria-label="Twitter">
+              <i class="bi bi-twitter text-base"></i>
+            </a>
+          </div>
+        </div>
+    
+        <!-- Column 2: Shop by Category -->
+        <div class="flex flex-col items-center md:items-start">
+          <h3 class="text-base font-semibold text-gray-900 mb-3">Shop by Category</h3>
+          <nav class="flex flex-col space-y-1 text-center md:text-left text-sm">
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Dresses</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Kurtas & Tunics</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Formal Wear</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Casual Wear</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Accessories</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Sale</a>
+          </nav>
+        </div>
+    
+        <!-- Column 3: Customer Service -->
+        <div class="flex flex-col items-center md:items-start">
+          <h3 class="text-base font-semibold text-gray-900 mb-3">Customer Service</h3>
+          <nav class="flex flex-col space-y-1 text-center md:text-left text-sm">
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">FAQs</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Shipping & Delivery</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Returns & Exchanges</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Size Guide</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Contact Us</a>
+          </nav>
+        </div>
+    
+        <!-- Column 4: About & Legal -->
+        <div class="flex flex-col items-center md:items-start">
+          <h3 class="text-base font-semibold text-gray-900 mb-3">About Elegance</h3>
+          <nav class="flex flex-col space-y-1 text-center md:text-left text-sm">
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Our Story</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Careers</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Privacy Policy</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Terms of Service</a>
+          </nav>
+        </div>
+      </div>
+    
+      <!-- Copyright -->
+      <div class="mt-4 pt-2 border-t border-gray-100 text-center text-gray-600 text-xs">
+        <p>&copy; 2025 Elegance. All rights reserved.</p>
+      </div>
+    </footer>
+    
+    
+  </div>
+</body>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance | Women's Clothing</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="font-sans antialiased bg-gray-50">
+  <div class="w-full 2xl:w-3/4 mx-auto ">
+    <!-- Navigation Bar -->
+    <nav class="border-b border-gray-100 bg-gray-100 py-4 px-4 md:px-8"> <!-- Reduced padding here -->
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="images/logo.png" class="w-12 h-12 rounded-full" alt="">
+            </div> 
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-6"> <!-- Reduced space between nav items -->
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition">New Arrivals</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition">Collections</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition">About</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition">
+                    <i class="bi bi-cart2 text-xl"></i>
+                </a>
+            </div>
+
+            <!-- Mobile - Only Cart Icon -->
+            <div class="md:hidden">
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition">
+                    <i class="bi bi-cart2 text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+      <!-- Progress Indicator (always first row, full width) -->
+      <div class="flex items-center justify-center my-8 md:mb-12 w-full mx-1 md:mx-0">
+        <div class="flex items-center w-full max-w-xs sm:max-w-md md:max-w-lg gap-2 sm:gap-4 md:gap-8">
+          <!-- Step 1: Active -->
+          <div class="flex flex-col items-center flex-1">
+            <div class="w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-black text-white font-bold">1</div>
+            <span class="mt-2 text-xs md:text-sm font-semibold text-black text-center">Address & Shipping</span>
+          </div>
+          <!-- Line Between -->
+          <div class="h-0.5 bg-gray-400 flex-1 mx-1"></div>
+          <!-- Step 2: Inactive -->
+          <div class="flex flex-col items-center flex-1">
+            <div class="w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-gray-200 text-black font-bold border-2 border-gray-400">2</div>
+            <span class="mt-2 text-xs md:text-sm font-semibold text-gray-500 text-center">Review Order</span>
+          </div>
+        </div>
+      </div>
+      <!-- Main Content: Form and Summary (second row) -->
+      <div class="max-w-7xl mx-auto px-0 sm:px-4 lg:px-8">
+        <div class="flex flex-col md:grid md:grid-cols-3 md:gap-8 items-start">
+          <!-- Shipping Address Card -->
+          <div class="order-1 md:order-none md:col-span-2 flex flex-col gap-4 md:gap-8 w-full">
+            <div class="bg-white p-4 md:p-6 rounded shadow w-full mx-1 md:mx-0">
+              <div>
+                <h2 class="text-2xl font-semibold text-gray-900">Shipping Address</h2>
+                <p class="text-sm text-gray-600 mb-6">Enter the address where you'd like your order delivered.</p>
+                <form class="space-y-6">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <label class="block text-sm font-medium text-gray-700" for="firstName">First Name</label>
+                      <input id="firstName" name="firstName" type="text" class="mt-1 block w-full border border-gray-300 rounded p-2" required />
+                    </div>
+                    <div>
+                      <label class="block text-sm font-medium text-gray-700" for="lastName">Last Name</label>
+                      <input id="lastName" name="lastName" type="text" class="mt-1 block w-full border border-gray-300 rounded p-2" required />
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <label class="block text-sm font-medium text-gray-700" for="email">Email Address</label>
+                      <input id="email" name="email" type="email" class="mt-1 block w-full border border-gray-300 rounded p-2" required />
+                    </div>
+                    <div>
+                      <label class="block text-sm font-medium text-gray-700" for="phone">Phone Number</label>
+                      <input id="phone" name="phone" type="tel" class="mt-1 block w-full border border-gray-300 rounded p-2" required />
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700" for="address">Address</label>
+                    <input id="address" name="address" type="text" class="mt-1 block w-full border border-gray-300 rounded p-2" required />
+                  </div>
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                      <label class="block text-sm font-medium text-gray-700" for="city">City</label>
+                      <input id="city" name="city" type="text" class="mt-1 block w-full border border-gray-300 rounded p-2" required />
+                    </div>
+                    <div>
+                      <label class="block text-sm font-medium text-gray-700" for="state">State/Province</label>
+                      <input id="state" name="state" type="text" class="mt-1 block w-full border border-gray-300 rounded p-2" required />
+                    </div>
+                    <div>
+                      <label class="block text-sm font-medium text-gray-700" for="zipCode">Zip/Postal Code</label>
+                      <input id="zipCode" name="zipCode" type="text" class="mt-1 block w-full border border-gray-300 rounded p-2" required />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Order Summary -->
+          <div class="order-2 md:order-none md:col-span-1 w-full">
+            <div class="bg-white p-4 md:p-6 rounded shadow w-full mb-4 md:mb-6 mx-1 md:mx-0">
+              <h2 class="text-2xl font-semibold text-gray-900">Order Summary</h2>
+              <p class="text-sm text-gray-600 mb-4">Final breakdown of your costs.</p>
+              <div class="space-y-2 text-sm text-gray-700 border-b border-gray-100 pb-4 mb-4">
+                <div class="flex justify-between">
+                  <span>Subtotal (3 items)</span>
+                  <span>PKR 47,970</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Shipping</span>
+                  <span>PKR 500</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-semibold text-gray-900">Total</span>
+                <span class="text-lg font-bold text-gray-900">PKR 48,470</span>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 mb-4 mx-1 md:mx-0">
+              <button type="button" class="w-full bg-gray-900 hover:bg-gray-800 text-white py-3 text-lg rounded">
+                Cash on Delivery
+              </button>
+              <button type="button" class="w-full border-2 border-gray-900 text-gray-900 bg-white hover:bg-gray-50 py-3 text-lg rounded">
+                Pay Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Products Section (third row, always full width) -->
+        <div class="flex flex-col gap-4 md:gap-8 w-full mt-4">
+          <div class="bg-white p-4 md:p-6 rounded shadow w-full mx-1 md:mx-0">
+            <div>
+              <h2 class="text-2xl font-semibold text-gray-900">Your Items</h2>
+              <p class="text-sm text-gray-600 mb-6">Review and adjust quantities of your selected products.</p>
+              <div class="space-y-6">
+                <!-- Example Item (Repeat as needed) -->
+                <div class="flex items-center gap-4 border-b border-gray-100 pb-4">
+                  <div class="w-24 h-24 overflow-hidden rounded-md border border-gray-200 bg-gray-100">
+                    <img src="images/card-img.png" alt="Product" class="w-full h-full object-cover" />
+                  </div>
+                  <div class="flex-1">
+                    <h3 class="text-base font-medium text-gray-900">DENIM BLUE COTTON CASUAL KURTA</h3>
+                    <div class="flex items-center justify-between gap-6 mt-1">
+                      <p class="text-sm font-medium text-gray-900">PKR <span class="unit-price">4,990</span></p>
+                      <div class="flex items-center gap-2">
+                        <p class="text-sm text-gray-700 mr-4">Qty: <span class="quantity-display">1</span></p>
+                        <p class="text-sm font-semibold text-gray-900">Total: PKR <span class="product-total">4,990</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add more items manually -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </main>
+
+    
+
+    <!-- Footer -->
+    <footer class="bg-white py-4 border-t border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
+    
+        <!-- Column 1: Company Info -->
+        <div class="flex flex-col items-center md:items-start text-center md:text-left">
+          <a href="#" class="mb-3 block">
+            <img
+              src="images/logo.png"
+              width="56"
+              height="56"
+              class="w-14 h-14 rounded-full"
+              alt="Elegance Logo"
+            />
+          </a>
+          <p class="text-gray-600 text-xs leading-tight max-w-xs mb-4">
+            Elegance offers exquisite traditional and contemporary Pakistani clothing.
+          </p>
+          <div class="flex space-x-3">
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition" aria-label="Facebook">
+              <i class="bi bi-facebook text-base"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition" aria-label="Instagram">
+              <i class="bi bi-instagram text-base"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition" aria-label="Twitter">
+              <i class="bi bi-twitter text-base"></i>
+            </a>
+          </div>
+        </div>
+    
+        <!-- Column 2: Shop by Category -->
+        <div class="flex flex-col items-center md:items-start">
+          <h3 class="text-base font-semibold text-gray-900 mb-3">Shop by Category</h3>
+          <nav class="flex flex-col space-y-1 text-center md:text-left text-sm">
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Dresses</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Kurtas & Tunics</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Formal Wear</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Casual Wear</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Accessories</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Sale</a>
+          </nav>
+        </div>
+    
+        <!-- Column 3: Customer Service -->
+        <div class="flex flex-col items-center md:items-start">
+          <h3 class="text-base font-semibold text-gray-900 mb-3">Customer Service</h3>
+          <nav class="flex flex-col space-y-1 text-center md:text-left text-sm">
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">FAQs</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Shipping & Delivery</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Returns & Exchanges</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Size Guide</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Contact Us</a>
+          </nav>
+        </div>
+    
+        <!-- Column 4: About & Legal -->
+        <div class="flex flex-col items-center md:items-start">
+          <h3 class="text-base font-semibold text-gray-900 mb-3">About Elegance</h3>
+          <nav class="flex flex-col space-y-1 text-center md:text-left text-sm">
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Our Story</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Careers</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Privacy Policy</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Terms of Service</a>
+          </nav>
+        </div>
+      </div>
+    
+      <!-- Copyright -->
+      <div class="mt-4 pt-2 border-t border-gray-100 text-center text-gray-600 text-xs">
+        <p>&copy; 2025 Elegance. All rights reserved.</p>
+      </div>
+    </footer>
+    
+    
+  </div>
+</body>
+<script>
+  // Simple script for quantity and total calculation
+  document.addEventListener('DOMContentLoaded', function() {
+    const price = 4990;
+    const quantityInput = document.querySelector('.quantity-input');
+    const productTotal = document.querySelector('.product-total');
+    quantityInput.addEventListener('input', function() {
+      let qty = parseInt(quantityInput.value) || 1;
+      if (qty < 1) qty = 1;
+      quantityInput.value = qty;
+      productTotal.textContent = (qty * price).toLocaleString();
+    });
+  });
+</script>
